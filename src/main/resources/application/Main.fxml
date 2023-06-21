@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="508.0" prefWidth="437.0" styleClass="MainPane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+    <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="69.0" prefHeight="66.0" prefWidth="396.0" styleClass="highLite" textFill="WHITE">
+        <font>
+            <Font size="37.0" />
+        </font>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+    </Label>
+    <AnchorPane layoutY="116.0" prefHeight="392.0" prefWidth="410.0">
+        <Button fx:id="kj10" layoutX="169.0" layoutY="166.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="6" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj6" layoutX="92.0" layoutY="98.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="8" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj5" layoutX="169.0" layoutY="98.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="9" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj8" layoutX="14.0" layoutY="166.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="4" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj9" layoutX="92.0" layoutY="166.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="5" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj7" layoutX="14.0" layoutY="98.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="7" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj13" layoutX="14.0" layoutY="235.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="1" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj14" layoutX="92.0" layoutY="235.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="2" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj19" layoutX="169.0" layoutY="307.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="0" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj20" layoutX="254.0" layoutY="307.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="." textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj18" layoutX="14.0" layoutY="307.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="145.0" styleClass="highLite" text="=" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj4" layoutX="254.0" layoutY="98.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="*" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj11" layoutX="254.0" layoutY="166.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="/" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj12" layoutX="340.0" layoutY="166.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="^" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj17" layoutX="340.0" layoutY="235.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="-" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj21" layoutX="340.0" layoutY="307.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="(%)" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="C" layoutX="14.0" layoutY="28.0" onAction="#ClearFunction" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="c" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj16" layoutX="339.0" layoutY="28.0" onAction="#OneOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="√" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj1" layoutX="254.0" layoutY="28.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="+" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj15" layoutX="169.0" layoutY="235.0" onAction="#processNumber" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="3" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj2" layoutX="93.0" layoutY="28.0" onAction="#ClearFunctionCM" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="⌫" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj22" layoutX="169.0" layoutY="28.0" onAction="#OneOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="1/x" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj3" layoutX="255.0" layoutY="235.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="-" textFill="WHITE">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Button>
+        <Button fx:id="kj" layoutX="340.0" layoutY="98.0" onAction="#TwoOperator" prefHeight="60.0" prefWidth="70.0" styleClass="highLite" text="Mod" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+   <Label fx:id="userlabel" layoutX="20.0" prefHeight="41.0" prefWidth="396.0" text="Label" textFill="WHITE">
+        <font>
+            <Font size="16.0" />
+        </font>
+   </Label>
+   <Label fx:id="counterlabel" layoutX="20.0" layoutY="28.0" prefHeight="41.0" prefWidth="390.0" text="Label" textFill="WHITE"/>
+
+</AnchorPane>

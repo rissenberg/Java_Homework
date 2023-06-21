@@ -1,0 +1,10 @@
+.root {
+    -fx-background-color: #ffffff;
+}
+
+.MainPane {
+    -fx-background-color: rgba(80, 80, 95, 0.95);
+}
+.highLite {
+    -fx-background-color: rgba(230, 220, 220, 0.6);
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="155.0" prefWidth="350.0" styleClass="MainPane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AuthController">
+   <children>
+      <ButtonBar layoutX="136.0" layoutY="101.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#authenticate" text="Log in!" />
+            <Button fx:id="quit" mnemonicParsing="false" onAction="#quitapp" text="Quit" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="loginfield" layoutX="101.0" layoutY="14.0" prefHeight="24.0" prefWidth="223.0" />
+      <TextField fx:id="passwordfield" layoutX="101.0" layoutY="48.0" prefHeight="24.0" prefWidth="223.0" />
+      <Label fx:id="login" layoutX="23.0" layoutY="18.0" style="font-color: white " text="Log in" textFill="WHITE" />
+      <Label layoutX="23.0" layoutY="52.0" style="font-color: white " text="Password" textFill="WHITE" />
+      <Label fx:id="error" layoutX="84.0" layoutY="78.0" style="font-color: gray " text="" textFill="#ff4040fc" />
+   </children>
+</AnchorPane>

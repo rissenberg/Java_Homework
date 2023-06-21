@@ -1,2 +1,2 @@
-# Lab 2 - Cinema console application
-
+# Lab 4 - Calculator Desktop application
+    
