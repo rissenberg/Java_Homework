@@ -1,41 +1,28 @@
-public class Seat {
-    private int NumberOfRow;
-    private int NumberOfPlace;
-    private int Cost;
+public class Seat extends Ticket {
+   // private int NumberOfRow;
+  //  private int NumberOfPlace;
+   // private int Cost;
     private boolean IsBought=false;
-    private String OwnerOfSeat = "";
+    //private String OwnerOfPlace="";
 
     Seat() {}
-    Seat(int row, int place, int cost) {
-        NumberOfRow=row;
-        NumberOfPlace=place;
-        Cost=cost;
+    Seat(int row, int place, int cost, int NumberOfSession) {
+       //NumberOfRow=row;
+       // NumberOfPlace=place;
+       //Cost=cost;
+        super ( row, place, cost,NumberOfSession);
     }
     public void BuyingPlace(String NewOwner) {
         IsBought=true;
-        OwnerOfSeat =NewOwner;
-    }
-    public int getNumberOfRow() {
-        return NumberOfRow;
-    }
-    public void setNumberOfRow(int numberOfRow) {
-        NumberOfRow = numberOfRow;
+        OwnerOfPlace=NewOwner;
     }
 
-    public int getCost() {
-        return Cost;
-    }
-
-    public void setCost(int cost) {
-        Cost = cost;
-    }
-
-    public int getNumberOfPlace() {
-        return NumberOfPlace;
-    }
-
-    public void setNumberOfPlace(int numberOfPlace) {
-        NumberOfPlace = numberOfPlace;
+    public void ShowInf(){
+        System.out.println("Ticket on film \""+FilmOfTicket.getName()+"\"");
+        System.out.println("Row "+(NumberOfRow+1) + " Seat " + (NumberOfPlace+1));
+        System.out.println("Seance ID number: "+NumberOfSession);
+        System.out.println("Beginning time:"+Main.seanceNum.get(NumberOfSession).getTimeOfBeginning());
+        System.out.println("Ending time:"+Main.seanceNum.get(NumberOfSession).getTimeOfEnding());
     }
 
     public boolean getIsBought() {

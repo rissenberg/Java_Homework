@@ -1,2 +1,2 @@
-# Lab 2 - Cinema console application
+# Lab 3 - Modified cinema, FileWriter FileReader
 

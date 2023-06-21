@@ -1,23 +1,30 @@
+import java.io.FileWriter;
+
 public class Film {
     private String Name;
     private int Year;
-    private String Genre; // жанр
+    private String Genre;
     private int DurationOfFilm;
     private String Format;
-    private int count = 0;
-    Film (String newName, int newYear, String newGenre, int newDurationOfFilm, String newFormat) {
+    private int NumberOfFilm=0;
+    Film (String newName, int newYear, String newGenre, int newDurationOfFilm, String newFormat, int NewNum) {
         Name=newName;
         Year=newYear;
         Genre=newGenre;
         DurationOfFilm=newDurationOfFilm;
         Format=newFormat;
+        NumberOfFilm=NewNum;
     }
-
-    public void showInf (){
-        System.out.println("Title: \""+Name+ "\" ");
-        System.out.print("Genre: "+Genre+", year: "+Year );
-        System.out.println(", length: "+DurationOfFilm+", format: "+Format);
-        System.out.println(" Tickets sold: "+count);
+    public void Save (String FileName,String sep)throws Exception{
+        FileWriter fin= new FileWriter(FileName,true);
+        fin.write(Name+sep+Year+sep+Genre+sep+DurationOfFilm+sep+Format+sep+NumberOfFilm+"\n");
+        fin.close();
+    }
+    public void ShowInf(){
+        System.out.println("Information on film №"+NumberOfFilm);
+        System.out.println("Name: \""+Name+"\", year: "+Year+", genre: "+Genre);
+        System.out.println("length: \""+DurationOfFilm+"\", format: "+Format);
+        System.out.println("------------------");
     }
     Film (){}
     public String getName() {
@@ -59,15 +66,4 @@ public class Film {
     public void setFormat(String format) {
         Format = format;
     }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
 }
-
-// выввести самые рентабельные фильмы, вывести их по длительности
-// к третьей: написать сериалайзеры к классам клиент, админ, кинотеатр

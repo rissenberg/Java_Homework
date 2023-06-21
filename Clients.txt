@@ -1,0 +1,2 @@
+JustName;12345678;123@mail.ru;123;10000;Guest
+Tarantino;87654321;tarantino2003@mail.com;123;25000;Director;Fight club
